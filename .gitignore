@@ -1,6 +1,13 @@
 
 .idea/
 
-qodana.yaml
-./*/.ipynb_checkpoints/*
-*/STAN/.ipynb_checkpoints/*
+qodana.yaml 
+./.ipynb_checkpoints/*
+*/JAGS/.ipynb_chechpoints/*
+*/STAN/.ipynb_checkpoints/* 
+ex1/.ipynb_checkpoints/* 
+ex2/.ipynb_checkpoints/*
+ex3/.ipynb_checkpoints/*
+ex4/.ipynb_checkpoints/*
+ex5/.ipynb_checkpoints/*
+ex6/.ipynb_checkpoints/*
