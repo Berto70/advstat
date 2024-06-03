@@ -1,0 +1,10 @@
+model {
+    # data likelihood 
+    X ~ dbinom(p, n);
+ 
+    # a uniform beta prior for p
+    p ~ dbeta(1,10);
+    
+    # predicted data, given p
+    Y ~ dbinom(p, n_next);
+}
