@@ -2,5 +2,5 @@
 .idea/
 
 qodana.yaml
-*/.ipynb_checkpoints/*
+./*/.ipynb_checkpoints/*
 */STAN/.ipynb_checkpoints/*
