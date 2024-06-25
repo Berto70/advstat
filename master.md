@@ -59,5 +59,5 @@ Very useful when we don't have enough infos about the distr of random variables,
 - Markov: $X\ge0$ w/ $E[x]=\mu$ $\Rightarrow$ $P(X\ge k)\le \frac{\mu}{k}$
 - Jensen: $E[x^2]\ge (E[x])^2$ since $var(c)\ge0$ $\rightarrow$ $X$ w/ \\
 $E[x]=\mu$ and $g(x)$ is a convex func $\Rightarrow$ $g(E[x])\le E[g(x)]$
-- Cheby:  $X\ge0$ w/ $E[x]=\mu$ and $var(x)=\sigma^2$ $\Rightarrow$ $P(|X-\mu|\ge k)\le \frac{sigma^2}{k^2}$\\
+- Cheby:  $X\ge0$ w/ $E[x]=\mu$ and $var(x)=\sigma^2$ $\Rightarrow$ $P(|X-\mu|\ge k)\le \frac{\sigma^2}{k^2}$ \\
   if $k=r\sigma\quad\rightarrow\quad P(|X-\mu|\ge r\sigma)\le \frac{1}{r^2}$ 
