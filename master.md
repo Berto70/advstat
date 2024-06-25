@@ -54,3 +54,10 @@ $\Rightarrow$ post is inverse Gamma w/    $\alpha' = \alpha + \frac{n}{2} \quad,
 - Combinations (order doesn't matter):
 	- yes rep: $\frac{(n+r+1)!}{r!(n-1)!}$ (n° of ways of choosing r obj from n, w/ replacement)
 	- no rep: $\frac{n!}{r!(n-r)!}$ (n° of ways of choosing r obj from n, w/o regard of order)
+## Ineq.
+Very useful when we don't have enough infos about the distr of random variables, but for which we can calculate $E[x]$ and/or $var(x)$
+- Markov: $X\ge0$ w/ $E[x]=\mu$ $\Rightarrow$ $P(X\ge k)\le \frac{\mu}{k}$
+- Jensen: $E[x^2]\ge (E[x])^2$ since $var(c)\ge0$ $\rightarrow$ $X$ w/ \\
+$E[x]=\mu$ and $g(x)$ is a convex func $\Rightarrow$ $g(E[x])\le E[g(x)]$
+- Cheby:  $X\ge0$ w/ $E[x]=\mu$ and $var(x)=\sigma^2$ $\Rightarrow$ $P(|X-\mu|\ge k)\le \frac{sigma^2}{k^2}$\\
+  if $k=r\sigma\quad\rightarrow\quad P(|X-\mu|\ge r\sigma)\le \frac{1}{r^2}$ 
