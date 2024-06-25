@@ -119,3 +119,20 @@ Very useful when we don't have enough infos about the distr of random variables,
 
 - Cheby:  $X\ge0$ w/ $E[x]=\mu$ and $var(x)=\sigma^2$ $\Rightarrow$ $P(|X-\mu|\ge k)\le \frac{\sigma^2}{k^2}$
   if $k=r\sigma\quad\rightarrow\quad P(|X-\mu|\ge r\sigma)\le \frac{1}{r^2}$
+
+## Inv. sampl
+```r
+qpois.m <- function(p, lambda) { 
+	k <- 0 
+	while (ppois.m(k, lambda) < p) {
+		k <- k + 1 
+	} 
+	return(k) 
+}
+
+rpois.m <- function(n, lambda) { 
+	u <- runif(n) 
+	samples <- sapply(u, function(p) qpois.m(p, lambda)) 
+	return(samples) 
+}
+```
