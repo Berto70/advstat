@@ -1,0 +1,16 @@
+model {
+
+    for (i in 1:length(Y)){
+
+        # Likelihood distribution for the data
+        Y[i] ~ dnorm(Z[i], c)
+        # Linear model for the expected value of Y
+        Z[i] <- a + b * X[i]
+    }
+    
+    # Priors for the model parameters
+    a ~ dunif(1, 10)  # Uniform distribution between 1 and 10
+    b ~ dunif(-1, 3)  # Uniform distribution between -1 and 3
+    c ~ dunif(0.034, 4)  # Uniform distribution between 0.034 and 4
+
+}

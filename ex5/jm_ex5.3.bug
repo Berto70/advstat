@@ -1,0 +1,13 @@
+model {
+
+    for (i in 1:length(x)){
+
+        # distribution for the data
+        x[i] ~ dnorm(m, s)
+    }
+    
+    # Priors for the model parameters
+    m ~ dunif(-10, 10)  # Uniform distribution between -10 and 10
+    s ~ dunif(0, 50)  # Uniform distribution between 0 and 50
+
+}
